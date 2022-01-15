@@ -74,7 +74,7 @@
       ethereum = window.ethereum;
     }
 
-    const vendorAddress = '0xC6dC5F4e0B037d4dAa24130b428A7f3353e1Ae27';
+    const vendorAddress = '0xb2d96151BBa417453571f8454Ee4398ab05F174F';
     const minimalForwarderAddr = vendorAddress;
 
     window.document.getElementById('vendorContractAddress').textContent = vendorAddress;
@@ -128,7 +128,7 @@
         : 0;
       const req = await genBuyTokensForEthMetaTx(minimalForwarderAddr, vendorAddress, value);
       window.document.getElementById('metaTxFrom').value = req.from;
-      window.document.getElementById('metaTxValue').value = req.value;
+      // window.document.getElementById('metaTxValue').value = req.value;
       window.document.getElementById('metaTxGas').value = req.gas;
       window.document.getElementById('metaTxNonce').value = req.nonce;
       window.document.getElementById('metaTxData').value = req.data;
