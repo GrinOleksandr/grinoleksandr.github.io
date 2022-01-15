@@ -128,7 +128,7 @@
         : 0;
       const req = await genBuyTokensForEthMetaTx(minimalForwarderAddr, vendorAddress, value);
       window.document.getElementById('metaTxFrom').value = req.from;
-      // window.document.getElementById('metaTxValue').value = req.value;
+      window.document.getElementById('metaTxValue').value = req.value;
       window.document.getElementById('metaTxGas').value = req.gas;
       window.document.getElementById('metaTxNonce').value = req.nonce;
       window.document.getElementById('metaTxData').value = req.data;
